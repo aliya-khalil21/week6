@@ -1,40 +1,29 @@
-# include <iostream>
+# include<iostream>
 using namespace std;
-int isgreater(int num1,int num2,int num3);
 main()
 {
-      int integer;   
-    int num1;
-    int num2;
-    int num3;
-    cout <<"enter num1";
-    cin >>num1;
-    cout <<"enter num2";
-    cin >>num2;
-    cout <<"enter num3";
-    cin >>num3;
-   graetest=isgreater(num1,num2,num3);
-   cout <<graetest;
-
-
+string temperature;
+string humidity;
+cout <<"enter temperature";
+cin >>temperature;
+cout <<"humidty";
+cin >>humidity;
+if (temperature=="warm" && humidity=="dry" )
+{
+    cout <<"play tennis";  
 }
-isgreater(int num1,int num2,int num3)
-{ 
-    int greatest
-    if (num3>num2 && num3>num1)
+if (temperature=="warm" && humidity=="humid")
 {
-    greatest=num3;
-}    
- if (num2>num3 && num2>num1)
+      cout <<" swim";
+}
+if (temperature=="cold" && humidity=="dry")
 {
-    greatest=num2;
-}    
- if (num1>num2 && num1>num3)
+      cout <<"play basketball";
+}
+if (temperature=="cold" && humidity=="humid")
 {
-    greatest=num1;
-}  
-else
-{greatest=num1;
-}  
-return graetest;
+      cout <<"watch tv";
+}
+
+
 }
